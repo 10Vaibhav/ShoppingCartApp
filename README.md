@@ -23,4 +23,25 @@ A modern e-commerce shopping cart application built with React, Redux Toolkit, a
 - Fake Store API (Product Data)
 - React Loader Spinner
 
-## �� Project Structure
+# 🎯 Core Functionality
+
+### Home Page
+- Displays a grid of products fetched from Fake Store API
+- Loading spinner while products are being fetched
+- Add/Remove products to cart directly from the product tiles
+
+### Cart Page
+- View all items added to cart
+- Remove items from cart
+- See cart summary including:
+  - Total number of items
+  - Total price of items
+- Empty cart state with redirect to shop
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed

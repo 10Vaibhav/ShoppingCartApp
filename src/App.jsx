@@ -1,14 +1,19 @@
-
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import Home from './pages/Home'
+import Cart from './pages/Cart'
 
 function App() {
 
 
   return (
     <>
-      <div className='bg-orange-600 flex justify-center items-center text-white '>
-        <h1>hello ji
-        </h1>
+      <div>
+        <h1>Navbar</h1>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+      </Routes>
       </div>
     </>
   )

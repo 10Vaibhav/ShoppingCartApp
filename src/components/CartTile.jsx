@@ -19,12 +19,12 @@ export default function CartTile({cartItem}){
                 <p className="text-white font-extrabold">${cartItem?.price}</p>
             </div>
         </div>
-        <div className="pl-4 flex-shrink-0">
-            <button onClick={handleRemoveFromCart}
-                    className="bg-rose-950 text-white px-4 py-2 cursor-pointer rounded-lg font-semibold hover:bg-rose-900 transition-colors whitespace-nowrap">
-                    Remove From Cart
-            </button>
-        </div>
+        <div className="pl-2 sm:pl-4 flex-shrink-0">
+    <button onClick={handleRemoveFromCart}
+            className="bg-rose-950 text-white px-2 py-1 sm:px-4 sm:py-2 cursor-pointer rounded-lg text-sm sm:text-base font-semibold hover:bg-rose-900 transition-colors whitespace-nowrap">
+            Remove From Cart
+    </button>
+</div>
     </div>
     </>
 }

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div className='pt-20'>
       <Header/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>

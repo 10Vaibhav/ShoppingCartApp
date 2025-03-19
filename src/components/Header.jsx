@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Header(){
 
-    return <div>
+    return <div className="bg-white z-50 w-full fixed top-0">
         <nav className="flex items-center justify-between h-20 max-w-6xl mx-auto px-4 border-b border-rose-100">
             <Link to={"/"}>
                 <div>

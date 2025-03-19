@@ -17,15 +17,15 @@ export default function Cart() {
       {cart && cart.length ? (
         <>
         <div>
-            <div className="flex flex-col justify-center items-end p-5 space-y-5 mt-5 mb-4">
-                <h1 className="font-bold text-lg text-red-800">Your Cart Summary</h1>
-                <p>
-                  <span className="text-gray-800 font-bold ">Total Items</span>
-                  <span>: {cart.length}</span>
+            <div className="flex flex-col justify-center items-end p-5 space-y-4 mt-5 mb-4 bg-rose-50 rounded-lg mx-4">
+                <h1 className="font-bold text-xl text-rose-800">Your Cart Summary</h1>
+                <p className="flex gap-2">
+                    <span className="text-gray-800 font-bold">Total Items</span>
+                    <span className="text-rose-700">{cart.length}</span>
                 </p>
-                <p>
-                <span className="text-gray-800 font-bold ">Total Amount</span>
-                <span>: {totalCart}</span>
+                <p className="flex gap-2">
+                    <span className="text-gray-800 font-bold">Total Amount</span>
+                    <span className="text-rose-700">${totalCart.toFixed(2)}</span>
                 </p>
             </div>
           </div>
@@ -39,11 +39,11 @@ export default function Cart() {
         </>
       ) : (
         <div className="min-h-[80vh] flex flex-col justify-center items-center">
-          <h1 className="text-gray-800 font-bold text-xl mb-2">
+          <h1 className="text-gray-800 font-bold text-2xl mb-4">
             Your Cart is Empty
           </h1>
           <Link to={"/"}>
-            <button className="bg-red-950 text-white border-2 rounded-lg font-bold p-3 cursor-pointer">
+            <button className="bg-rose-900 text-white px-6 py-3 rounded-lg font-semibold cursor-pointer hover:bg-rose-800 transition-colors">
               SHOP NOW
             </button>
           </Link>
